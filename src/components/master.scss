@@ -31,7 +31,18 @@ $light: $seafoam;
 $link: $slate;
 $link-visited: $purple;
 
+$dimensions: 16 24 32 48 64 96 128 256;
+
 @import '~bulma/bulma.sass';
+
+.image.has-image-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#headshot-image .gatsby-image-wrapper {
+  border-radius: 10000px;
+}
 
 .hero-body {
   position: relative;
@@ -76,6 +87,10 @@ $link-visited: $purple;
 .box-icon-container {
   padding: 1rem 0 1.5rem 0;
   color: $purple;
+}
+
+#skill-cards {
+  margin-top: -60px;
 }
 
 @keyframes indicator-move {
