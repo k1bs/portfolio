@@ -1,3 +1,93 @@
 @charset 'utf-8';
 
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('../fonts/LibreBaskerville-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro SemiBold';
+  src: url('../fonts/SourceSansPro-SemiBold.ttf');
+}
+
+// Colors
+$seafoam: #dff0ea;
+$slate: #95adbe;
+$purple: #574f7d;
+$dark-purple: #4f3a65;
+
+// Bulma vars
+$title-family: 'Libre Baskerville', Helvetica, sans-serif;
+$family-sans-serif: 'Source Sans Pro Regular', Helvetica, Arial, sans-serif;
+$subtitle-family: 'Source Sans Pro SemiBold', Helvetica, Arial, sans-serif;
+$primary: $dark-purple;
+$info: $slate;
+$light: $seafoam;
+$link: $slate;
+$link-visited: $purple;
+
 @import '~bulma/bulma.sass';
+
+.hero-body {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-blob {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+}
+#blob-1 {
+  background-image: url('../images/blob-shape-1.svg');
+  background-position: top right;
+}
+#blob-2 {
+  background-image: url('../images/blob-shape-2.svg');
+  background-position: bottom left;
+}
+
+.navbar-brand .navbar-item {
+  font-family: $title-family;
+  font-size: $size-4;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 60px;
+  width: 24px;
+  height: 24px;
+  left: 50%;
+  margin-left: -12px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  transform: rotate(-45deg);
+  opacity: 0;
+  animation: indicator-move 1.5s infinite 3s;
+}
+
+.box-icon-container {
+  padding: 1rem 0 1.5rem 0;
+  color: $purple;
+}
+
+@keyframes indicator-move {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
