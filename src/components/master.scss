@@ -25,6 +25,8 @@ $dark-purple: #4f3a65;
 $title-family: 'Libre Baskerville', Helvetica, sans-serif;
 $family-sans-serif: 'Source Sans Pro Regular', Helvetica, Arial, sans-serif;
 $subtitle-family: 'Source Sans Pro SemiBold', Helvetica, Arial, sans-serif;
+$footer-background-color: $purple;
+$footer-color: white;
 $primary: $dark-purple;
 $info: $slate;
 $light: $seafoam;
@@ -89,8 +91,26 @@ $dimensions: 16 24 32 48 64 96 128 256;
   color: $purple;
 }
 
-#skill-cards {
-  margin-top: -60px;
+#projects-header {
+  padding-bottom: 4rem;
+}
+
+#skill-spacer {
+  background-color: $slate;
+  h3 {
+    color: findColorInvert($slate);
+  }
+}
+
+.column.project-column {
+  flex: 1 0 256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 769px) {
+    flex-grow: 0;
+  }
 }
 
 @keyframes indicator-move {
