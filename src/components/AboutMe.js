@@ -12,7 +12,7 @@ const AboutMe = () => (
             I&apos;m a full-stack web developer, lover (and streamer) of games and game design,
             pressure cooker aficionado, React ninja, and have been making glasses cool
             again since 1997.
-            You&apos;re equally likely to find me on the golf course, in a river with a
+            You&apos;re likely to find me on the golf course, in a river with a
             fly rod, or on a hiking trail in the mountains. My professional career has
             spanned three states, four companies, and two completely separate careers.
             I&apos;m equally comfortable in front of people as in front of an IDE.

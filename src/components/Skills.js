@@ -48,7 +48,7 @@ const Skills = () => (
                 </div>
                 <h4 className="subtitle is-4 has-text-centered">Cutting Edge Tech</h4>
                 <p className="has-text-centered">
-                  Excels at implementing clean, functional designs and highly-optimized
+                  Excel at implementing clean, functional designs and highly-optimized
                   applications, utilizing the latest technology from Rails 6 and React 16.
                 </p>
               </div>
