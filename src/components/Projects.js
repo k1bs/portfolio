@@ -26,10 +26,10 @@ const Projects = () => {
 
   return (
     <Fragment>
-      <section id="projects-header" className="section is-medium">
+      <section id="projects-header" className="section is-medium has-background-white">
         <h3 className="title is-1 has-text-centered has-text-primary">Projects:</h3>
       </section>
-      <section className="section">
+      <section className="section has-background-white">
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-two-thirds">
@@ -60,7 +60,7 @@ const Projects = () => {
         </div>
 
       </section>
-      <section className="section">
+      <section className="section has-background-white">
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-two-thirds">
@@ -96,7 +96,7 @@ const Projects = () => {
           </div>
         </div>
       </section>
-      <section className="section">
+      <section className="section has-background-white">
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-two-thirds">
@@ -125,7 +125,7 @@ const Projects = () => {
           </div>
         </div>
       </section>
-      <section className="section">
+      <section className="section has-background-white">
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-two-thirds">
@@ -153,7 +153,7 @@ const Projects = () => {
           </div>
         </div>
       </section>
-      <section className="section" />
+      <section className="section has-background-white" />
       <div className={`modal ${modalOpen ? 'is-active' : ''}`}>
         <div className="modal-background" />
         <div ref={modalContent} className="modal-content">

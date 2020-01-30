@@ -1,9 +1,25 @@
 import { Link } from 'gatsby';
 // import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+
+  const navRef = useRef(null);
+
+  const handleClickOutside = () => {
+    if (open && navRef.current) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('click', handleClickOutside);
+
+    return () => {
+      window.removeEventListener('click', handleClickOutside);
+    };
+  });
 
   return (
     <nav className="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
@@ -27,7 +43,7 @@ const Header = () => {
             <span aria-hidden="true" />
           </button>
         </div>
-        <div className={`navbar-menu${open ? ' is-active' : ''}`}>
+        <div ref={navRef} className={`navbar-menu${open ? ' is-active' : ''}`}>
           <div className="navbar-end">
             <a className="navbar-item" href="#about-me">About Me</a>
             <a className="navbar-item" href="#skill-spacer">Skills</a>

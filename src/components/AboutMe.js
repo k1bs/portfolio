@@ -2,7 +2,7 @@ import React from 'react';
 import ProfilePhoto from './images/ProfileImage';
 
 const AboutMe = () => (
-  <section id="about-me" className="section is-medium">
+  <section id="about-me" className="section is-medium has-background-white">
     <div className="container">
       <div className="columns is-desktop is-centered is-vcentered">
         <div className="column is-full is-half-desktop">
