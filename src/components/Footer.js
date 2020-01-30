@@ -43,7 +43,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="has-text-centered">
-        <h6 clasName="title is-6">Made with Gatsby | 2020</h6>
+        <h6 className="title is-6 has-text-white">Made with Gatsby | 2020</h6>
       </div>
     </div>
   </footer>
