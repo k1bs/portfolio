@@ -54,7 +54,7 @@ $dimensions: 16 24 32 48 64 96 128 256;
 .hero-blob {
   position: absolute;
   width: 100%;
-  height: calc(100% - 3.25rem);
+  height: 100vh;
   background-repeat: no-repeat;
 }
 #blob-1 {

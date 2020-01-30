@@ -6,7 +6,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="container">
         <div className="navbar-brand">
           <Link
