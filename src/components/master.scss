@@ -58,7 +58,7 @@ html {
 .hero-blob {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 3.25rem);
   background-repeat: no-repeat;
 }
 #blob-1 {
