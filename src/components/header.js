@@ -45,6 +45,12 @@ const Header = () => {
         </div>
         <div ref={navRef} className={`navbar-menu${open ? ' is-active' : ''}`}>
           <div className="navbar-end">
+            <Link
+              className="navbar-item"
+              to="/blog"
+            >
+                Blog
+            </Link>
             <a className="navbar-item" href="#about-me">About Me</a>
             <a className="navbar-item" href="#skill-spacer">Skills</a>
             <a className="navbar-item" href="#projects-header">Projects</a>
@@ -65,12 +71,6 @@ const Header = () => {
             >
               LinkedIn
             </a>
-            {/* <Link
-              className="navbar-item"
-              to="/contact"
-            >
-                Blog
-            </Link> */}
           </div>
         </div>
       </div>

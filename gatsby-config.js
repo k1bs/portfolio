@@ -16,6 +16,31 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-default-html-attrs',
+            options: {
+              h1: ['subtitle', 'is-1'],
+              h2: ['subtitle', 'is-2'],
+              h3: ['subtitle', 'is-3'],
+              h4: ['subtitle', 'is-4'],
+              h5: ['subtitle', 'is-5'],
+              h6: ['subtitle', 'is-6'],
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: `${__dirname}/src/blog`,
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
