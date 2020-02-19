@@ -13,8 +13,8 @@ const Post = ({ data }) => {
       <SEO title={frontmatter.title} />
       <section className="section has-background-white">
         <div className="container">
-          <div className="columns is-centered">
-            <div className="column is-four-fifths">
+          <div className="columns is-centered is-desktop">
+            <div className="column is-full is-three-fifths-desktop">
               <h1 className="title is-2">{frontmatter.title}</h1>
               <h2 className="subtitle is-4">{frontmatter.date}</h2>
               <div

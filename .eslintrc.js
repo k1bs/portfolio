@@ -6,6 +6,7 @@ module.exports = {
     "extends": "airbnb",
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "react/jsx-fragments": [1, 'element']
+        "react/jsx-fragments": [1, 'element'],
+        "react/no-danger": "off",
     }
 };
